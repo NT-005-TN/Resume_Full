@@ -1,0 +1,201 @@
+/* Основные настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif; /* Современный шрифт */
+}
+
+body {
+  background-color: #f9f9f9; /* Светлый фон */
+  color: #333; /* Темно-серый текст */
+  line-height: 1.8; /* Увеличенная высота строки */
+  font-size: 16px; /* Базовый размер шрифта */
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto; /* Увеличенные внешние отступы */
+  padding: 30px;
+  background-color: #fff; /* Белый фон */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+  border-radius: 12px; /* Закругленные углы */
+}
+
+/* Боковая панель */
+.sidebar {
+  width: 300px;
+  padding: 30px;
+  background-color: #0d47a1; /* Голубой акцент */
+  color: #fff;
+  border-radius: 12px; /* Закругленные углы */
+  margin-right: 30px; /* Отступ между боковой панелью и основным контентом */
+}
+
+.sidebar h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 20px; /* Увеличенный размер заголовков */
+  font-weight: 600; /* Умеренная жирность */
+  text-transform: uppercase; /* Все заглавные буквы */
+  letter-spacing: 1px; /* Расстояние между буквами */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 12px;
+  font-size: 15px; /* Увеличенный размер текста */
+  font-weight: 400; /* Легкий текст */
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #fff; /* Белый цвет для иконок */
+}
+
+/* Уровни навыков */
+.skills-list .skill-level {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.skills-list .beginner {
+  color: #F0FAAA; /* Светло-жёлто-зелёный для новичков */
+}
+
+.skills-list .basic {
+  color: #C8E6C9; /* Средне-зелёный для базовых навыков */
+}
+
+.skills-list .advanced {
+  color: #81C784; /* Тёмно-зелёный для опытных навыков */
+}
+
+/* Качества */
+.qualities-list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.qualities-list i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.qualities-list .fas.fa-circle {
+  color: #FF4500; /* Оранжевый круг */
+}
+
+.qualities-list .fas.fa-square {
+  color: #1E90FF; /* Синий квадрат */
+}
+
+.qualities-list .fas.fa-star {
+  color: #FFD700; /* Золотая звезда */
+}
+
+.qualities-list .fas.fa-diamond {
+  color: #8A2BE2; /* Фиолетовый ромб */
+}
+
+.qualities-list .fas.fa-heart {
+  color: #FF69B4; /* Розовое сердце */
+}
+
+.qualities-list .fas.fa-sun {
+  color: #FFD700; /* Желтое солнце */
+}
+
+.qualities-list .fas.fa-comment {
+  color: #00FA9A; /* Светло-зеленый комментарий */
+}
+
+.qualities-list .fas.fa-handshake {
+  color: #8B008B; /* Темно-фиолетовое рукопожатие */
+}
+
+.qualities-list .fas.fa-smile {
+  color: #FF6347; /* Оранжевая улыбка */
+}
+
+.qualities-list .fas.fa-hourglass {
+  color: #4682B4; /* Синие песочные часы */
+}
+
+.qualities-list .fas.fa-shield-alt {
+  color: #2F4F4F; /* Темно-серый щит */
+}
+
+/* Основной контент */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  color: #444; /* Мягкий серый цвет текста */
+}
+
+.main-content h1 {
+  font-size: 32px; /* Увеличенный размер имени */
+  margin-bottom: 20px;
+  font-weight: 600; /* Мягкая жирность */
+  color: #0d47a1; /* Голубой акцент */
+  text-align: center; /* Центрирование имени */
+}
+
+.main-content h2 {
+  font-size: 22px; /* Размер заголовков */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600; /* Умеренная жирность */
+  color: #0d47a1; /* Голубой акцент */
+  border-bottom: 2px solid #0d47a1; /* Линия под заголовками */
+  padding-bottom: 8px; /* Отступ под линией */
+}
+
+.main-content p {
+  margin-bottom: 20px;
+  font-size: 16px; /* Базовый размер текста */
+  font-weight: 400; /* Легкий текст */
+  color: #555; /* Мягкий серый цвет текста */
+  line-height: 1.8; /* Улучшенная высота строки */
+}
+
+.main-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 16px; /* Размер текста в списках */
+  font-weight: 400; /* Легкий текст */
+  color: #555; /* Мягкий серый цвет текста */
+  margin-bottom: 20px; /* Отступ после списков */
+}
+
+.fa-map-marker-alt,
+.fa-birthday-cake {
+  margin-right: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0; /* Убираем отступ справа */
+  }
+
+  .main-content h1 {
+    text-align: left; /* Выравнивание по левому краю на мобильных устройствах */
+  }
+}
